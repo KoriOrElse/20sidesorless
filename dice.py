@@ -1,7 +1,11 @@
 import random
 
-# #user is asked for number of sides on the die
-d = int(input("num_sides: "))
-
-# #random number is generated between 1 and variable d
-print(random.randint(1,d))
+def roll_dice(sides):
+    #sides = int(input("number of sides: "))
+    result= random.randint(1, sides)
+    return result 
+roll_1= (roll_dice(int(input("number of sides: "))))
+roll_2= (roll_dice(int(input("number of sides: "))))
+print("roll_1: ",roll_1)
+print("roll_2: ",roll_2)
+print("total", roll_1 + roll_2)
