@@ -1,17 +1,15 @@
 import random
 
-def roll_dice(nsides):
-    #sides = int(input("number of sides: "))
-    result= random.randint(1, nsides)
-    return result
+sides= int(input("number of sides:" ))
+d_num= int(input("number of dice:" ))
+print (d_num, "d", sides)
 
-def askinput():
-    sides= int(input("number of sides: "))
-    value= roll_dice(sides)
-    return value
- 
-roll_1= askinput()
-roll_2= askinput()
-print("roll_1: ",roll_1)
-print("roll_2: ",roll_2)
-print("total", roll_1 + roll_2)
+total=0
+x=1
+for i in range (d_num):
+    rolling= random.randint(1, sides)
+    total= (total+ rolling)
+    print ("result",x, ":", rolling)
+    x=(x+1)
+
+print(total)
