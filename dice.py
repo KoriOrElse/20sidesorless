@@ -12,4 +12,4 @@ for i in range (d_num):
     print ("result",x, ":", rolling)
     x=(x+1)
 
-print(total)
+print("total:", total)
